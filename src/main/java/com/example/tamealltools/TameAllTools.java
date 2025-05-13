@@ -79,6 +79,9 @@ public class TameAllTools
     @SubscribeEvent
     public void onMining(PlayerInteractEvent.LeftClickBlock event)
     {
+        Level level = event.getLevel();
+        if (!level.isClientSide()) return;
+
         Player player = event.getEntity();
         Item itemUsed = event.getItemStack().getItem();
 
