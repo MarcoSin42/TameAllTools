@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "mixin.client.tamealltools",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.tamealltools.json",
+  "mixins": [
+  ],
+  "client": [
+    "blockUpdateHandler"
+  ],
+  "minVersion": "0.8"
+}
